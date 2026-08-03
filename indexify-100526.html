@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Spotify</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background:#000;
+    font-family:Arial,Helvetica,sans-serif;
+}
+body::before{
+    content:"";
+    position:fixed;
+    inset:-30%;
+    background:
+        radial-gradient(circle at 20% 25%,rgba(30,215,96,.45),transparent 28%),
+        radial-gradient(circle at 80% 20%,rgba(30,215,96,.28),transparent 32%),
+        radial-gradient(circle at 25% 80%,rgba(0,255,170,.18),transparent 35%),
+        radial-gradient(circle at 80% 80%,rgba(0,180,120,.22),transparent 35%);
+    filter:blur(80px);
+}
+button{
+    position:relative;
+    padding:20px 54px;
+    border:none;
+    border-radius:999px;
+    background:linear-gradient(135deg,#1ed760,#1db954,#45ff9a);
+    color:#000;
+    font-size:1.2rem;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 0 40px rgba(30,215,96,.45);
+}
+</style>
+</head>
+<body>
+
+<button onclick="location.href='https://open.spotify.com/show/033w0NnUadjeFxHuChlyta'">
+Open Spotify
+</button>
+
+</body>
+</html>
